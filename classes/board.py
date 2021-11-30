@@ -21,6 +21,9 @@ class Board:
                       "¦ _ | _ | _ ¦ _ | _ | _ ¦ _ | _ | _ ¦",
                       "¦===================================¦"]
         self.column_index = [2, 6, 10, 14, 18, 22, 26, 30, 34]
+    
+    def populate_board(self):
+        print('test')
 
     def edit_board(self, row, column, num):
         """

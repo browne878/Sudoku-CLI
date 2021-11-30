@@ -15,4 +15,4 @@ from classes.board import Board
 # print("¦===================================¦")
 
 board = Board()
-board.edit_board(1, 9, '1')
+board.populate_board()
