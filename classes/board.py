@@ -1,4 +1,5 @@
 import copy
+import json
 
 
 class Board:
@@ -24,6 +25,11 @@ class Board:
     
     def populate_board(self):
         print('test')
+
+        with open('./assets/boards/boards.json') as json_board:
+            boards = json.load(json_board)
+
+            print(boards['easy_boards'][0])
 
     def edit_board(self, row, column, num):
         """
