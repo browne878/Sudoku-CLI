@@ -24,12 +24,17 @@ class Board:
         self.column_index = [2, 6, 10, 14, 18, 22, 26, 30, 34]
     
     def populate_board(self):
-        print('test')
+        """
+        Populates the sudoku board with a template from JSON
+        """
 
         with open('./assets/boards/boards.json') as json_board:
             boards = json.load(json_board)
 
-            print(boards['easy_boards'][0])
+            self.board = boards['easy_boards'][1]['template']
+        
+        for row in self.board:
+            print(row)
 
     def edit_board(self, row, column, num):
         """
