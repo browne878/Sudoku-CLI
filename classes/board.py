@@ -1,5 +1,6 @@
 import copy
 import json
+import random
 
 
 class Board:
@@ -7,7 +8,7 @@ class Board:
     Creates an instance of Board
     """
 
-    def __init__(self):
+    def __init__(self, difficulty):
         self.board = ["¦===================================¦",
                       "¦ _ | _ | _ ¦ _ | _ | _ ¦ _ | _ | _ ¦",
                       "¦ _ | _ | _ ¦ _ | _ | _ ¦ _ | _ | _ ¦",
@@ -21,20 +22,26 @@ class Board:
                       "¦ _ | _ | _ ¦ _ | _ | _ ¦ _ | _ | _ ¦",
                       "¦ _ | _ | _ ¦ _ | _ | _ ¦ _ | _ | _ ¦",
                       "¦===================================¦"]
+        self.board_solution = []
         self.column_index = [2, 6, 10, 14, 18, 22, 26, 30, 34]
-    
+        self.difficulty = difficulty
+
     def populate_board(self):
         """
-        Populates the sudoku board with a template from JSON
+        Populates the sudoku board and solution with a template from JSON
         """
 
         with open('./assets/boards/boards.json') as json_board:
             boards = json.load(json_board)
 
-            self.board = boards['easy_boards'][1]['template']
-        
-        for row in self.board:
-            print(row)
+            board_count = len(boards[self.difficulty + '_boards'])
+            rand_board_index = random.randint(0, (board_count - 1))
+
+            self.board = boards[
+                self.difficulty + '_boards'][rand_board_index]['template']
+            
+            self.board_solution = boards[
+                self.difficulty + '_boards'][rand_board_index]['solution']
 
     def edit_board(self, row, column, num):
         """

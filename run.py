@@ -14,5 +14,5 @@ from classes.board import Board
 # print("¦ 0 | 0 | 0 ¦ 0 | 0 | 0 ¦ 0 | 0 | 0 ¦")
 # print("¦===================================¦")
 
-board = Board()
+board = Board('normal')
 board.populate_board()
