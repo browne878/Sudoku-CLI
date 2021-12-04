@@ -92,3 +92,14 @@ class Board:
         self.board[index] = temp_board[row - 1]
 
         return True
+
+    def check_complete(self):
+        """
+        Compares Game board and complete versions to see
+        if the game is complete.
+        """
+
+        if self.board == self.board_solution:
+            return True
+        else:
+            return False

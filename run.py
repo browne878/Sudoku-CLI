@@ -26,3 +26,4 @@ else:
     for row in board.board:
         print(row)
 
+print(board.check_complete())
