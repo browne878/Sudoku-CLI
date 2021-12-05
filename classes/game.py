@@ -8,6 +8,22 @@ class Game:
         self.incorrect_guesses = 0
         self.boards_completed = 0
 
+    def __validate_input(self, input):
+        input_int = None
+
+        try:
+            input_int = int(input)
+        except ValueError:
+            print('You did not enter a number. Please try again!')
+            return False
+
+        if input_int is not None:
+            if input_int < 1 or input_int > 9:
+                print('You did not enter a number 1-9. Please try again!')
+                return False
+
+        return True
+
     def welcome(self):
         """
         Displays a welcome message to the user when a new instance
@@ -92,6 +108,15 @@ class Game:
 
         return difficulty_message
 
+    # def request_box(self):
+    #     """
+    #     Requests box for guess and validates user input.
+    #     Returns user input as array [row, column]
+    #     """
+
+    #     print('Please select the row of the box!')
+    #     row_input = input('Row between 1 and 9: ')
+
     def request_guess(self):
         """
         Requests and validates the users guess
@@ -102,16 +127,8 @@ class Game:
 
             print('Please select a number between 1 and 9')
             guess = input('What number belongs in the selected square: ')
-            guess_int = None
 
-            try:
-                guess_int = int(guess)
-            except ValueError:
-                print('You did not enter a number. Please try again!')
+            if not self.__validate_input(guess):
                 continue
 
-            if guess_int < 1 or guess_int > 9:
-                print('You did not enter a number 1-9. Please try again!')
-                continue
-            
             return guess
