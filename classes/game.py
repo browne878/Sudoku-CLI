@@ -91,3 +91,27 @@ class Game:
             difficulty_message = switch.get(difficulty, difficulty_message)
 
         return difficulty_message
+
+    def request_guess(self):
+        """
+        Requests and validates the users guess
+        Returns validated guess as a string
+        """
+
+        while True:
+
+            print('Please select a number between 1 and 9')
+            guess = input('What number belongs in the selected square: ')
+            guess_int = None
+
+            try:
+                guess_int = int(guess)
+            except ValueError:
+                print('You did not enter a number. Please try again!')
+                continue
+
+            if guess_int < 1 or guess_int > 9:
+                print('You did not enter a number 1-9. Please try again!')
+                continue
+            
+            return guess
