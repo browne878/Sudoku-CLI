@@ -55,3 +55,39 @@ class Game:
 
         for line in instructions:
             print(line)
+
+    def select_difficulty(self):
+        """
+        Gets the required difficulty from the user and returns it
+        """
+
+        request_string = [
+            'Please select one of the following difficulties.',
+            '0 - Random',
+            '1 - Easy',
+            '2 - Normal',
+            '3 - Medium',
+            '4 - Hard',
+            '5 - Very Hard'
+        ]
+
+        difficulty_message = 'Invalid Difficulty. Please try again!'
+
+        while difficulty_message == 'Invalid Difficulty. Please try again!':
+            for line in request_string:
+                print(line)
+
+            difficulty = input('Please select the difficulty: ')
+
+            switch = {
+                '0': 'random',
+                '1': 'easy',
+                '2': 'normal',
+                '3': 'medium',
+                '4': 'hard',
+                '5': 'very_hard'
+            }
+
+            difficulty_message = switch.get(difficulty, difficulty_message)
+
+        return difficulty_message

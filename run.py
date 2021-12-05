@@ -4,3 +4,4 @@ game = Game()
 game.welcome()
 
 game.instructions()
+print(game.select_difficulty())
