@@ -108,14 +108,34 @@ class Game:
 
         return difficulty_message
 
-    # def request_box(self):
-    #     """
-    #     Requests box for guess and validates user input.
-    #     Returns user input as array [row, column]
-    #     """
+    def request_box(self):
+        """
+        Requests box for guess and validates user input.
+        Returns user input as array [row, column]
+        """
 
-    #     print('Please select the row of the box!')
-    #     row_input = input('Row between 1 and 9: ')
+        row_input = ''
+        column_input = ''
+
+        while True:
+            print('Please select the row of the box!')
+            row_input = input('Row between 1 and 9: ')
+
+            if not self.__validate_input(row_input):
+                continue
+
+            break
+
+        while True:
+            print('Please select the column of the box!')
+            column_input = input('Column between 1 and 9: ')
+
+            if not self.__validate_input(column_input):
+                continue
+
+            break
+
+        return [row_input, column_input]
 
     def request_guess(self):
         """
