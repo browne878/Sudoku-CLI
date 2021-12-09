@@ -1,4 +1,3 @@
 from classes.game import Game
+from classes.board import Board
 
-game = Game()
-print(game.request_box())
