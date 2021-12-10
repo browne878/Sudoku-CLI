@@ -1,5 +1,7 @@
+import os
 from classes.game import Game
 from classes.board import Board
+
 
 def new_game():
     """
@@ -17,6 +19,8 @@ def new_game():
 
     while True:
 
+        os.system('cls' if os.name == 'nt' else 'clear')
+
         for row in current_board.board:
             print(row)
 
@@ -29,8 +33,21 @@ def new_game():
             print('Incorrect!')
 
         if current_board.check_complete():
-            print('congratulations')
+            print('congratulations!')
+            print('')
+            print('Would you like to play again?')
+            print('Press Y for Yes.')
+            print('Press N for No.')
+
+            while True:
+                play_again = input()
+
+                if play_again.upper() == 'Y':
+                    return True
+                elif play_again.upper() == 'N':
+                    return False
 
 
 while True:
-    new_game()
+    if not new_game():
+        break

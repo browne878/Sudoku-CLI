@@ -61,7 +61,9 @@ class Board:
             boards = json.load(json_board)
 
             if self.difficulty == 'random':
-                difficulties = ['easy', 'normal', 'medium', 'hard', 'very_hard']
+                difficulties = [
+                    'easy', 'normal', 'medium', 'hard', 'very_hard'
+                ]
 
                 self.difficulty = random.choice(difficulties)
 
