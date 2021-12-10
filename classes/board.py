@@ -60,6 +60,11 @@ class Board:
         with open('./assets/boards/boards.json') as json_board:
             boards = json.load(json_board)
 
+            if self.difficulty == 'random':
+                difficulties = ['easy', 'normal', 'medium', 'hard', 'very_hard']
+
+                self.difficulty = random.choice(difficulties)
+
             board_count = len(boards[self.difficulty + '_boards'])
             rand_board_index = random.randint(0, (board_count - 1))
 
