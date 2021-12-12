@@ -29,8 +29,10 @@ def new_game():
 
         if current_board.edit_board(int(location[0]), int(location[1]), guess):
             print('Correct!')
+            current_game.correct_guesses += 1
         else:
             print('Incorrect!')
+            current_game.incorrect_guesses += 1
 
         if current_board.check_complete():
             print('congratulations!')
