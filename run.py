@@ -21,6 +21,9 @@ def new_game():
 
         os.system('cls' if os.name == 'nt' else 'clear')
 
+        current_game.print_header(current_game.correct_guesses,
+                                  current_game.incorrect_guesses)
+
         for row in current_board.board:
             print(row)
 

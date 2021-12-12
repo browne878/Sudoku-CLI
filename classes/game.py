@@ -7,6 +7,7 @@ class Game:
         self.correct_guesses = 0
         self.incorrect_guesses = 0
         self.boards_completed = 0
+        self.game_header = []
 
     def __validate_input(self, input):
         input_int = None
@@ -152,3 +153,19 @@ class Game:
                 continue
 
             return guess
+
+    def print_header(self, correct_guesses, incorrect_guesses):
+        """
+        Formats and prints the game header with score variables.
+        """
+
+        self.game_header = [
+            '========================= SUDOKU CLI =========================',
+            f'Correct Guesses = {correct_guesses}                       ' +
+            f'Incorrect Guesses = {incorrect_guesses}',
+            f'                     Total Guesses = '
+            f'{correct_guesses + incorrect_guesses}'
+        ]
+
+        for line in self.game_header:
+            print(line)
