@@ -55,6 +55,14 @@ def new_game():
                 elif play_again.upper() == 'N':
                     return False
 
+        if ((current_game.correct_guesses +
+                current_game.incorrect_guesses) > 79 and
+                (current_game.correct_guesses +
+                    current_game.incorrect_guesses) % 10 == 0):
+            print('Are you cheating?')
+            print('It is not as fun when you cheat ;)')
+            input('Press enter to continue cheating! ')
+
 
 while True:
     if not new_game():
