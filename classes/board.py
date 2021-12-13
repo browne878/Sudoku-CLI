@@ -42,7 +42,6 @@ class Board:
         del temp_board_solution[-1]
 
         current_num = temp_board[row - 1][self.column_index[column - 1]]
-        print(current_num)
 
         if current_num != '_':
             return False
