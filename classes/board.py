@@ -24,7 +24,7 @@ class Board:
                       "         9   ¦ _ | _ | _ ¦ _ | _ | _ ¦ _ | _ | _ ¦",
                       "             ¦===================================¦"]
         self.board_solution = []
-        self.column_index = [16, 20, 24, 29, 33, 37, 42, 46, 50]
+        self.column_index = [15, 19, 23, 27, 31, 35, 39, 43, 47]
         self.difficulty = difficulty
 
     def __validate_guess(self, temp_board, row, column, num):
