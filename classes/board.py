@@ -24,7 +24,7 @@ class Board:
                       "         9   ¦ _ | _ | _ ¦ _ | _ | _ ¦ _ | _ | _ ¦",
                       "             ¦===================================¦"]
         self.board_solution = []
-        self.column_index = [15, 19, 23, 27, 31, 35, 39, 43, 47]
+        self.column_index = [16, 20, 24, 28, 32, 36, 40, 44, 48]
         self.difficulty = difficulty
 
     def __validate_guess(self, temp_board, row, column, num):
@@ -35,6 +35,7 @@ class Board:
 
         temp_board_solution = copy.copy(self.board_solution)
 
+        del temp_board_solution[0]
         del temp_board_solution[0]
         del temp_board_solution[3]
         del temp_board_solution[6]
@@ -84,6 +85,7 @@ class Board:
         """
         temp_board = copy.copy(self.board)
         del temp_board[0]
+        del temp_board[0]
         del temp_board[3]
         del temp_board[6]
         del temp_board[-1]
@@ -94,8 +96,8 @@ class Board:
         index = self.board.index(temp_board[row - 1])
 
         temp_board[row - 1] = (
-            temp_board[row - 1][:self.column_index[column - 1]] +
-            num + temp_board[row - 1][self.column_index[column - 1] + 1:])
+                temp_board[row - 1][:self.column_index[column - 1]] +
+                num + temp_board[row - 1][self.column_index[column - 1] + 1:])
 
         self.board[index] = temp_board[row - 1]
 
