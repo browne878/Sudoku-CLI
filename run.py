@@ -1,6 +1,7 @@
 import os
-from classes.game import Game
+
 from classes.board import Board
+from classes.game import Game
 
 
 def new_game():
