@@ -24,7 +24,7 @@ class Board:
                       "         9   ¦ _ | _ | _ ¦ _ | _ | _ ¦ _ | _ | _ ¦",
                       "             ¦===================================¦"]
         self.board_solution = []
-        self.column_index = [16, 20, 24, 28, 32, 36, 40, 44, 48]
+        self.column_index = [16, 20, 24, 29, 33, 37, 42, 46, 50]
         self.difficulty = difficulty
 
     def __validate_guess(self, temp_board, row, column, num):
@@ -42,6 +42,7 @@ class Board:
         del temp_board_solution[-1]
 
         current_num = temp_board[row - 1][self.column_index[column - 1]]
+        print(current_num)
 
         if current_num != '_':
             return False
