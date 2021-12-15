@@ -41,6 +41,26 @@ After reviewing my plans, I decided to make this project a sudoku game. I decide
 
 ## **Features**
 
+### **Instructions**
+    During development, I deccided to give the user the option to view the instructions or not. I decided to do this as many poeple already know the rule of Sudoku. This means it will be alot easier for those who already know how to play. It also gives people who do not know how to play the option to read the instruction and learn how to play the game.
+![Instructions Option](./assets/readme/images/instructions.png)
+
+### **Difficulty**
+    I also added the option to chose a difficulty. This allows players with differing levels of experience to enjoy the game. I also added in a random option to allow the user to challenge themselves.
+![Difficulty Option](./assets/readme/images/difficulty.png)
+
+### **Score Header**
+    I decided to add a score header to allow the player to keep track of correct and incorrect guesses. This allows the user to challange themselves to do better each time.
+![Score Header](./assets/readme/images/score-header.png)
+
+### **Board***
+    I added a visual board to allow the player to see where their guesses need to go. It also makes it easier to play the game and makes it a lot more fun.
+![Board](./assets/readme/images/board.png)
+
+### **Guess Input**
+    I decided that the best way to take the users input would be to request the row, column and guess seperatly. This makes it simple for the user to select the square and input their guess.
+![Guess Input](./assets/readme/images/guess-input.png)
+
 ## **Future Development**
 
 ## **Testing**
