@@ -1,12 +1,10 @@
 # **Car Quiz**
 
-![Sudoku Board]()
-
 You can see the live website [here](https://browne878-sudoku-cli.herokuapp.com/).
 
-The purpose of this website to provide the user with a fun and challenging game to test their knowledge of cars.
+The purpose of this website is to give the player a fun game that is easy play.
 
-My aim for this quiz was to make a simple and easy to use UI that allows the user to focus on the game. I wanted to be able to randomise the questions so the user can play multiple times. Finally, I wanted this website to be responsive, so that users on all devices can enjoy the completed website.
+My aim for the Sudoku game is to provide an easy to use interface which makes it easy to play. I also want the players to be able to select a difficulty they want to play or randomise it for a challenge.
 
 ## **Table of Contents**
 
@@ -34,31 +32,32 @@ My aim for this quiz was to make a simple and easy to use UI that allows the use
 ## **Planning**
 ![Project Ideas](/project_ideas.png)
 
-I started my planning by coming up with 2 ideas. These were hangman and sudoku. I the proceded to plan the flow of each using Lucidchart. This allowed me to get an idea about how I would develop each idea.
+I started my planning by coming up with 2 ideas. These were hangman and sudoku. I the proceeded to plan the flow of each using Lucidchart. This allowed me to get an idea about how I would develop each idea.
 
 After reviewing my plans, I decided to make this project a sudoku game. I decided this because I wanted to make a challenging game which people can play multiple times.
+
 ## **UI/UX Decisions**
 
 ## **Features**
 
 ### **Instructions**
-- During development, I deccided to give the user the option to view the instructions or not. I decided to do this as many poeple already know the rule of Sudoku. This means it will be alot easier for those who already know how to play. It also gives people who do not know how to play the option to read the instruction and learn how to play the game.
+- During development, I decided to give the user the option to view the instructions or not. I decided to do this as many people already know the rule of Sudoku. This means it will be a lot easier for those who already know how to play. It also gives people who do not know how to play the option to read the instruction and learn how to play the game.
 ![Instructions Option](./assets/readme/images/instructions.png)
 
 ### **Difficulty**
-- I also added the option to chose a difficulty. This allows players with differing levels of experience to enjoy the game. I also added in a random option to allow the user to challenge themselves.
+- I also added the option to choose a difficult. This allows players with differing levels of experience to enjoy the game. I also added in a random option to allow the user to challenge themselves.
 ![Difficulty Option](./assets/readme/images/difficulty.png)
 
 ### **Score Header**
-- I decided to add a score header to allow the player to keep track of correct and incorrect guesses. This allows the user to challange themselves to do better each time.
+- I decided to add a score header to allow the player to keep track of correct and incorrect guesses. This allows the user to challenge themselves to do better each time.
 ![Score Header](./assets/readme/images/score-header.png)
 
-### **Board***
+### **Board**
 - I added a visual board to allow the player to see where their guesses need to go. It also makes it easier to play the game and makes it a lot more fun. Without being able to visualize the board, it would be a lot harder to play.
 ![Board](./assets/readme/images/board.png)
 
 ### **Guess Input**
-- I decided that the best way to take the users input would be to request the row, column and guess seperatly. This makes it simple for the user to select the square   and input their guess.
+- I decided that the best way to take the user input would be to request the row, column and guess separately. This makes it simple for the user to select the square and input their guess.
 ![Guess Input](./assets/readme/images/guess-input.png)
 
 ### **Result**
@@ -66,13 +65,13 @@ After reviewing my plans, I decided to make this project a sudoku game. I decide
 ![Result](./assets/readme/images/result.png)
 
 ### **Clearing the Terminal**
-After each guess process, I decided to clear the terminal. This prevents making the player scroll up and down the console. It makes it much more readable and easy to use.
+- After each guess process, I decided to clear the terminal. This prevents making the player scroll up and down the console. It makes it much more readable and easy to use.
 
 ## **Future Development**
 
-In the future I would like to connect the game to a database via an api. There, I could store the high scores of each game and board. I would also include a command to allow the player to view the high scores for each board before and after each game.
+- In the future, I would like to connect the game to a database via an API. There, I could store the high scores of each game and board. I would also include a command to allow the player to view the high scores for each board before and after each game.
 
-I would also like to add more sudoku boards to the JSON to allow more of a variety of boards with each difficulty.
+- I would also like to add more sudoku boards to the JSON to allow more of a variety of boards with each difficulty.
 
 ## **Testing**
 
@@ -80,12 +79,12 @@ I would also like to add more sudoku boards to the JSON to allow more of a varie
 
 ### Unfixed Bugs
 
-There are no know bugs at this time.
+There are no known bugs at this time.
 
 ### Fixed Bugs
 - After making changes to the board array to center it within the console, I was no longer able to select the required box. It would always say my answer was incorrect. This is due to the column array within the board class. The index's were no longer correct after changing the board array. After correcting this, the bug was resolved.
 
-- When I decided to center the board, at first, I only changed the empty board within the Board class. This resulted in the board not being centered within the console due it being changed when the board was loaded. To resolve this, I applied the same changes to each board within the JSON file. This resolved the issue.
+- When I decided to center the board, at first, I only changed the empty board within the Board class. This resulted in, the board not being centered within the console due it being changed when the board was loaded. To resolve this, I applied the same changes to each board within the JSON file. This resolved the issue.
 
 ## **Deployment**
 
@@ -125,15 +124,15 @@ These instructions will tell you how to deploy the repository on your local mach
 
 ### Remote Deployment
 
-The following instructions will guide you the the deployment process for Heroku. I will assume you already have a [Heroku](https://www.heroku.com/) account.
+The following instructions will guide you the deployment process for Heroku. I will assume you already have a [Heroku](https://www.heroku.com/) account.
 1. First, follow the instructions to clone the repository to your GitHub.
 2. On Heroku, login and navigate to your dashboard.
 3. In the top right, click `New` and select `Create a new app`.
 4. Next, name your app and select your region and click `Create app`.
-5. After this, under the deplyment method, select GitHub and link your account with GitHub.
+5. After this, under the deployment method, select GitHub and link your account with GitHub.
 6. Then, search for your cloned repository and click `Connect`.
 7. Under the `Automatic deploys` section, ensure the main branch is selected and click the `Enable Automatic Deploys`.
-8. Also, endsure the main branch is selected on the `Manual deploy` section.
+8. Also, under the main branch is selected in the `Manual deploy` section.
 9. Next, at the top of the page, navigate to the settings page.
 10. After this, under the `Config Vars` section, click the `Reveal Config Vars` button and enter the following `KEY` : `PORT` - `VALUE` : `8000`.
 11. Then, in the section below (`Buildpacks`), click `Add buildpack` and select python.
@@ -145,4 +144,4 @@ The following instructions will guide you the the deployment process for Heroku.
 
 ## **Credits**
 
-Code to clear the terminal after each guess was sourced from [StackOverflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python)
+Code to clear the terminal after each guess was sourced from [Stack Overflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python)
