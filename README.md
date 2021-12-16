@@ -75,6 +75,8 @@ After reviewing my plans, I decided to make this project a sudoku game. I decide
 
 ## **Testing**
 
+In order to keep the documentation organised and easy to read, I have moved the testing into a seperate file. This file can be found [here]('./assets/readme/testing/TESTS.md')
+
 ## **Bugs**
 
 ### Unfixed Bugs
