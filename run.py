@@ -20,6 +20,8 @@ def new_game():
 
     while True:
 
+        # Source
+        # https://stackoverflow.com/questions/2084508/clear-terminal-in-python
         os.system('cls' if os.name == 'nt' else 'clear')
 
         current_game.print_header(current_game.correct_guesses,

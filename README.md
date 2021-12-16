@@ -2,7 +2,7 @@
 
 ![Sudoku Board]()
 
-You can see the live website [here]().
+You can see the live website [here](https://browne878-sudoku-cli.herokuapp.com/).
 
 The purpose of this website to provide the user with a fun and challenging game to test their knowledge of cars.
 
@@ -125,4 +125,24 @@ These instructions will tell you how to deploy the repository on your local mach
 
 ### Remote Deployment
 
+The following instructions will guide you the the deployment process for Heroku. I will assume you already have a [Heroku](https://www.heroku.com/) account.
+1. First, follow the instructions to clone the repository to your GitHub.
+2. On Heroku, login and navigate to your dashboard.
+3. In the top right, click `New` and select `Create a new app`.
+4. Next, name your app and select your region and click `Create app`.
+5. After this, under the deplyment method, select GitHub and link your account with GitHub.
+6. Then, search for your cloned repository and click `Connect`.
+7. Under the `Automatic deploys` section, ensure the main branch is selected and click the `Enable Automatic Deploys`.
+8. Also, endsure the main branch is selected on the `Manual deploy` section.
+9. Next, at the top of the page, navigate to the settings page.
+10. After this, under the `Config Vars` section, click the `Reveal Config Vars` button and enter the following `KEY` : `PORT` - `VALUE` : `8000`.
+11. Then, in the section below (`Buildpacks`), click `Add buildpack` and select python.
+12. Repeat the previous step, but this time, select NodeJS.
+13. Once this is done, ensure that the python buildpack is at the top of the list. (You can drag them to move them).
+14. Then, at the top of the page, navigate back to the deploy section.
+15. Finally, you can scroll to the bottom of the page and click the `Deploy Branch` button under the `Manual deploy` section.
+16. Once the deployment is complete, you can click the `Open app` button at the top right of the page. This will open the deployed app in a new tab.
+
 ## **Credits**
+
+Code to clear the terminal after each guess was sourced from [StackOverflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python)
