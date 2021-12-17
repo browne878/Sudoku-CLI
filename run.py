@@ -1,5 +1,4 @@
 import os
-
 from classes.board import Board
 from classes.game import Game
 
