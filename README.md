@@ -14,6 +14,8 @@ My aim for the Sudoku game is to provide an easy to use interface which makes it
 
 - ### [Libraries]()
 
+- ### [Models]()
+
 - ### [Future Development]()
 
 - ### [Testing]()
@@ -35,8 +37,6 @@ My aim for the Sudoku game is to provide an easy to use interface which makes it
 I started my planning by coming up with 2 ideas. These were hangman and sudoku. I the proceeded to plan the flow of each using Lucidchart. This allowed me to get an idea about how I would develop each idea.
 
 After reviewing my plans, I decided to make this project a sudoku game. I decided this because I wanted to make a challenging game which people can play multiple times.
-
-## **UI/UX Decisions**
 
 ## **Features**
 
@@ -75,6 +75,11 @@ After reviewing my plans, I decided to make this project a sudoku game. I decide
 - I also included the JSON library. This allowed me to store the game boards within a JSON file. The library allowed me to read the JSON object.
 
 - I needed to include the Random library. This allowed me to generate random numbers and select a random string from an array. This added additional functionality to the game.
+
+## **Models**
+I decided to make 2 models in this project. These are the game and board models. By creating these models, I was able to prevent a lot of code duplication as most of the game logic was contained within these models.
+
+This meant that the run.py file mainly creates an instance of these and calls the functions leading to a much cleaner code layout. This results in much more readable code.
 
 ## **Future Development**
 
