@@ -8,28 +8,35 @@ My aim for the Sudoku game is to provide an easy to use interface which makes it
 
 ## **Table of Contents**
 
-- ### [Planning]()
+- ### [Planning](https://github.com/browne878/Sudoku-CLI#planning-1)
 
-- ### [Features]()
+- ### [Features](https://github.com/browne878/Sudoku-CLI#features-1)
+    - [Instructions](https://github.com/browne878/Sudoku-CLI#instructions)
+    - [Difficulty](https://github.com/browne878/Sudoku-CLI#difficulty)
+    - [Score Header](https://github.com/browne878/Sudoku-CLI#score-header)
+    - [Board](https://github.com/browne878/Sudoku-CLI#board)
+    - [Guess Input](https://github.com/browne878/Sudoku-CLI#guess-input)
+    - [Result](https://github.com/browne878/Sudoku-CLI#result)
+    - [Clearing the Terminal](https://github.com/browne878/Sudoku-CLI#clearing-the-terminal)
 
-- ### [Libraries]()
+- ### [Libraries](https://github.com/browne878/Sudoku-CLI#libraries-1)
 
-- ### [Models]()
+- ### [Models](https://github.com/browne878/Sudoku-CLI#models-1)
 
-- ### [Future Development]()
+- ### [Future Development](https://github.com/browne878/Sudoku-CLI#future-development-1)
 
-- ### [Testing]()
+- ### [Testing](https://github.com/browne878/Sudoku-CLI#testing-1)
 
-- ### [Bugs]()
-    - [Unfixed Bugs]()
-    - [Fixed Bugs]()
+- ### [Bugs](https://github.com/browne878/Sudoku-CLI#bugs-1)
+    - [Unfixed Bugs](https://github.com/browne878/Sudoku-CLI#unfixed-bugs)
+    - [Fixed Bugs](https://github.com/browne878/Sudoku-CLI#fixed-bugs)
 
-- ### [Deployment]()
-    - [Cloning/Forking Repository]()
-    - [Local Deployment]()
-    - [Remote Deployment]()
+- ### [Deployment](https://github.com/browne878/Sudoku-CLI#deployment-1)
+    - [Cloning/Forking Repository](https://github.com/browne878/Sudoku-CLI#cloning--forking-repository)
+    - [Local Deployment](https://github.com/browne878/Sudoku-CLI#local-deployment)
+    - [Remote Deployment](https://github.com/browne878/Sudoku-CLI#remote-deployment)
 
-- ### [Credits]()
+- ### [Credits](https://github.com/browne878/Sudoku-CLI#credits-1)
 
 ## **Planning**
 ![Project Ideas](/project_ideas.png)
