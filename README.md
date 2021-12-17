@@ -1,4 +1,4 @@
-# **Car Quiz**
+# **Sudoku-CLI**
 
 You can see the live website [here](https://browne878-sudoku-cli.herokuapp.com/).
 
