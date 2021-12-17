@@ -1,7 +1,23 @@
 # **Contents**
 
 - ## [Tests]()
-    - 
+    - [Read Instructions]()
+        - [Valid Inputs]()
+        - [Invalid Inputs]()
+    - [Select Difficulty]()
+        - [Valid Inputs]()
+        - [Invalid Inputs]()
+    - [Select Row, Column and Guess]()
+        - [Valid Inputs]()
+        - [Invalid Inputs]()
+    - [New Game]()
+        - [Valid Inputs]()
+        - [Invalid Inputs]()
+- ## [PEP8 Validation]()
+    - [run.py]()
+    - [game.py]()
+    - [board.py]()
+- ## [JSON Validation]()
 
 # **Tests**
 
