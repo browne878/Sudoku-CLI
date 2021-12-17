@@ -10,9 +10,9 @@ My aim for the Sudoku game is to provide an easy to use interface which makes it
 
 - ### [Planning]()
 
-- ### [UI/UX Decisions]()
-
 - ### [Features]()
+
+- ### [Libraries]()
 
 - ### [Future Development]()
 
@@ -66,6 +66,15 @@ After reviewing my plans, I decided to make this project a sudoku game. I decide
 
 ### **Clearing the Terminal**
 - After each guess process, I decided to clear the terminal. This prevents making the player scroll up and down the console. It makes it much more readable and easy to use.
+
+## **Libraries**
+- I needed to include the OS library to allow me to clear the console. This allows me to keep the console clean and makes the game easier to use.
+
+- I decided to include the Copy library. This was needed because when I tried to make a temporary version of a variable, it altered the original. This allowed me to make a copy without affecting the original.
+
+- I also included the JSON library. This allowed me to store the game boards within a JSON file. The library allowed me to read the JSON object.
+
+- I needed to include the Random library. This allowed me to generate random numbers and select a random string from an array. This added additional functionality to the game.
 
 ## **Future Development**
 
