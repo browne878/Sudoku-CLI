@@ -163,7 +163,7 @@ class Game:
             '========================= SUDOKU CLI =========================',
             f'Correct Guesses = {correct_guesses}                       ' +
             f'Incorrect Guesses = {incorrect_guesses}',
-            f'                       Total Guesses = ' +
+            '                       Total Guesses = ' +
             f'{correct_guesses + incorrect_guesses}',
             ''
         ]

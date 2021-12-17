@@ -26,17 +26,17 @@ The screenshots for these tests have been done within the terminal of my code ed
 ## **Select Row, Column and Guess**
 
 ### Valid Inputs
-- To select a row, the user must enter a number between 1 and 9. These are the only accepted inputs. The testing of this can be found [here](./images/valid-input/row).
+- To select a row, the user must enter a number between 1 and 9. These are the only accepted input's. The testing of this can be found [here](./images/valid-input/row).
 
 ### Invalid Inputs
-- To ensure that the user enters a valid input, the input is converted to a number. If that is successful it ensures that the number is greater than 0 and less than 10. The testing to show this can be found [here](./images/invalid-input/row).
+- To ensure that the user enters a valid input, the input is converted to a number. If that is successful, it ensures that the number is greater than 0 and less than 10. The testing to show this can be found [here](./images/invalid-input/row).
 
-The reason I am able to combine these three in testing is due to them sharing the same validation function. This was implemented to prevent code repition.
+The reason I am able to combine these three in testing is due to them sharing the same validation function. This was implemented to prevent code repetition.
 
 ## **New Game**
 
 ### Valid Inputs
-- At the end of each game, the user is given the option to being a new game. The only valid input's are Y, y, n and N. This is done by capitalizing the string from the input and then checking if it matches 'Y' or 'N'. The tests showing this can be found [here](./images/valid-input/new-game).
+- At the end of each game, the user is given the option of being a new game. The only valid input's are Y, y, n and N. This is done by capitalizing the string from the input and then checking if it matches 'Y' or 'N'. The tests that show this can be found [here](./images/valid-input/new-game).
 
 ### Invalid Inputs
 - Any input, other than one of the valid input's listed above, will not be accepted by the game. The testing of this can be found [here](./images/invalid-input/new-game).
@@ -46,3 +46,20 @@ These tests were done within the VSCode terminal. This was to prevent having to 
 During this testing I found that there was no message provided if a valid input was not provided. I corrected this by adding a message if an invalid input is not provided before looping through again.
 
 ## **PEP8 Validation**
+
+I put all of my python code through the [PEP8](http://pep8online.com/) validation. All of my code passed without any issues.
+
+### run.py
+![PEP8 validation of run.py](./images/pep8-run.png)
+
+### game.py
+![PEP8 validation of game.py](./images/pep8-game.png)
+
+### board.py
+![PEP8 validation of board.py](./images/pep8-board.png)
+
+## **JSON Validation**
+
+I put the boards.json file through the [JSON Formatter and Validator](https://jsonformatter.curiousconcept.com/#). My JSON file passed with no issues.
+
+![JSON validation of boards.json](./images/json-validation.png)
