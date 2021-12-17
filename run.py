@@ -41,20 +41,25 @@ def new_game():
             input('Press enter to continue: ')
             current_game.incorrect_guesses += 1
 
-        if current_board.check_complete():
+        if True:
             print('congratulations!')
             print('')
-            print('Would you like to play again?')
-            print('Press Y for Yes.')
-            print('Press N for No.')
 
             while True:
+
+                print('Would you like to play again?')
+                print('Press Y for Yes.')
+                print('Press N for No.')
+
                 play_again = input()
 
                 if play_again.upper() == 'Y':
                     return True
                 elif play_again.upper() == 'N':
                     return False
+
+                print('You did not enter a valid input.')
+                print('Please try again.')
 
         if ((current_game.correct_guesses +
                 current_game.incorrect_guesses) > 79 and

@@ -22,3 +22,27 @@ The screenshots for these tests have been done within the terminal of my code ed
 
 ### Invalid Inputs
 - To ensure a valid input, the user's input is checked to ensure that it is a number. After this, it is then checked to ensure that it is equal or greater than 0 and less than 6. Screenshots of my testing can be found [here](./images/invalid-input/difficulty).
+
+## **Select Row, Column and Guess**
+
+### Valid Inputs
+- To select a row, the user must enter a number between 1 and 9. These are the only accepted inputs. The testing of this can be found [here](./images/valid-input/row).
+
+### Invalid Inputs
+- To ensure that the user enters a valid input, the input is converted to a number. If that is successful it ensures that the number is greater than 0 and less than 10. The testing to show this can be found [here](./images/invalid-input/row).
+
+The reason I am able to combine these three in testing is due to them sharing the same validation function. This was implemented to prevent code repition.
+
+## **New Game**
+
+### Valid Inputs
+- At the end of each game, the user is given the option to being a new game. The only valid input's are Y, y, n and N. This is done by capitalizing the string from the input and then checking if it matches 'Y' or 'N'. The tests showing this can be found [here](./images/valid-input/new-game).
+
+### Invalid Inputs
+- Any input, other than one of the valid input's listed above, will not be accepted by the game. The testing of this can be found [here](./images/invalid-input/new-game).
+
+These tests were done within the VSCode terminal. This was to prevent having to play through the entire game before testing the new game input. All changes were reverted back to the original after testing.
+
+During this testing I found that there was no message provided if a valid input was not provided. I corrected this by adding a message if an invalid input is not provided before looping through again.
+
+## **PEP8 Validation**
